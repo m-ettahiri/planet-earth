@@ -41,7 +41,6 @@ export function useSphere() {
     const texture = loader.load(require("../assets/img/glob.jpg"));
     const material = new THREE.MeshBasicMaterial({
       map: texture,
-      transparent: true,
     });
     //create sphere
     const geometry = new THREE.SphereBufferGeometry(1, 36, 36);
@@ -55,7 +54,6 @@ export function useSphere() {
       map: cloudsTexture,
       transparent: true,
       opacity: 0.3,
-      transparent: true,
     });
     // create clouds
     const cloudsMesh = new THREE.Mesh(geometry, materialClouds);
